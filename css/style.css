@@ -1,65 +1,84 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  padding: 10px;
-  max-width: 370px;
-  margin: auto;
+  background: #f3f3f3;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 8px;
 }
 
 h2 {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+/* CARD */
 .verb-row {
-  background: #fff;
+  background: #ffffff;
+  border-radius: 6px;
   padding: 8px;
   margin-bottom: 8px;
-  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+/* VERB TITLE */
 .verb-title {
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 4px;
 }
 
 .uz {
-  font-size: 12px;
-  color: #555;
+  font-size: 11px;
+  font-weight: normal;
+  color: #666;
 }
 
+/* INPUTS — VERTIKAL */
 .inputs {
   display: flex;
-  gap: 5px;
-  margin-top: 5px;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
 }
 
 input {
   width: 100%;
-  padding: 6px;
+  padding: 7px;
   font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
+/* BUTTON */
 button {
-  margin-top: 5px;
   width: 100%;
-  padding: 6px;
+  margin-top: 6px;
+  padding: 7px;
   font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background: #e6e6e6;
 }
 
+/* RESULT */
 .result {
-  margin-top: 4px;
+  margin-top: 5px;
   font-size: 13px;
 }
 
 .correct {
   color: green;
+  font-weight: bold;
 }
 
 .wrong {
   color: red;
+  font-weight: bold;
 }
