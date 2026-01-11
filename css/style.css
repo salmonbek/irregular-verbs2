@@ -7,7 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f3f3f3;
-  padding: 15px;
+  padding: 16px;
 }
 
 /* CONTAINER */
@@ -19,59 +19,62 @@ body {
 /* TITLE */
 h2 {
   text-align: center;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 16px;
 }
 
 /* CARD */
 .verb-row {
   background: #fff;
-  border-radius: 6px;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* VERB */
 .verb-title {
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 6px;
 }
 
 .uz {
-  font-size: 12px;
-  color: #666;
+  font-size: 14px;
+  color: #555;
 }
 
-/* INPUTS — DESKTOP DEFAULT */
+/* INPUTS — DESKTOP */
 .inputs {
   display: flex;
-  gap: 10px;
-  margin-bottom: 6px;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 input {
   flex: 1;
-  padding: 8px;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
 }
 
 /* BUTTON */
 button {
-  width: 120px;
-  padding: 8px;
-  font-size: 14px;
+  margin-top: 10px;
+  width: 160px;
+  padding: 12px;
+  font-size: 16px;
   border: none;
-  border-radius: 4px;
-  background: #e6e6e6;
+  border-radius: 8px;
+  background: #e0e0e0;
   cursor: pointer;
 }
 
 /* RESULT */
 .result {
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 16px;
 }
 
 .correct {
@@ -84,24 +87,51 @@ button {
   font-weight: bold;
 }
 
-/* ========================= */
-/* 📱 MOBILE (600px dan past) */
-/* ========================= */
+/* =============================== */
+/* 📱 MOBILE — HAMMASI KATTA BO‘LADI */
+/* =============================== */
 @media (max-width: 600px) {
   body {
-    padding: 8px;
+    padding: 14px;
   }
 
   #verbs {
     max-width: 100%;
   }
 
+  h2 {
+    font-size: 26px;
+  }
+
+  .verb-row {
+    padding: 18px;
+  }
+
+  .verb-title {
+    font-size: 22px;
+  }
+
+  .uz {
+    font-size: 16px;
+  }
+
   .inputs {
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
+  }
+
+  input {
+    font-size: 20px;
+    padding: 16px;
   }
 
   button {
     width: 100%;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .result {
+    font-size: 18px;
   }
 }
